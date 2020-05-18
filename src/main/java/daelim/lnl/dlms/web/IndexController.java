@@ -24,12 +24,31 @@ public class IndexController {
         return "create";
     }
 
+    @GetMapping("/check")
+    public String check(){
+        return "check";
+    }
+
+    @GetMapping("/cancel")
+    public String cancel(){
+        return "cancel";
+    }
+
+    @GetMapping("/dayChange")
+    public String dayChange(){
+        return "dayChange";
+    }
+
+    @GetMapping("/member")
+    public String member(){
+        return "member";
+    }
+
     @GetMapping("/user")
     public String user_main(Model model){
         model.addAttribute("posts", postsService.findAllDesc());
         return "user_main";
     }
-
     @GetMapping("/user_form")
     public String user_form(){
         return "user_form";
