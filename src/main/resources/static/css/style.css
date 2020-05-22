@@ -118,7 +118,7 @@ table.reservation thead th {
     color: #369;
     border-bottom: 3px solid #036;
 }
-table.reservation thead th .btn {
+table.reservation thead th .btn1 {
     float: right;
     width: 50px;
     height: 30px;

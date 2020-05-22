@@ -44,7 +44,7 @@ body {
     background: #b0c4de;
 }
 .wrapper ul ul {
-    display: none;
+    
 }
 .wrapper ul li:hover > ul {
     display: block;
@@ -56,10 +56,52 @@ body {
 .wrapper .contents .reserseat {
     margin-top: 100px;
 }
-.wrapper .contents .reserseat img {
-    width: 100%;
-    height: 600px;
+.wrapper .contents .reserseat .set {
+    margin-left: 40px;
 }
+.wrapper .contents .reserseat .set input.seat-btn {
+    width: 100px;
+    height: 100px;
+    border: none;
+    background: #484848;
+}
+
+.wrapper .contents .reserseat .set input.seat-btn:hover {
+    background: #fa777d;
+}
+
+.wrapper .contents .reserseat .set input.seat-btn:active {
+    top: 2px;
+    outline: none; 
+    box-shadow: none;
+    background-color: #fa777d;
+    
+}
+
+.wrapper .contents .reserseat .set input.seat-btn:focus {
+    background: #fa777d;
+}
+
+button.selected{
+    color: #fa777d;
+}
+.wrapper .contents .reserseat .view {
+    text-align: center;
+    margin: 10px;
+}
+.wrapper .contents .reserseat .view input {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    margin: 10px;
+}
+.wrapper .contents .reserseat .form {
+    text-align: center;
+}
+
+
+
+
 
 
 

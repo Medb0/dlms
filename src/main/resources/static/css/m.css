@@ -1,0 +1,161 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+body {
+    /*font-family: 'Jua', sans-serif;*/
+    font-family: 'Gugi', cursive;
+    overflow-x: hidden;
+    background-color: #f3f5f9;
+    
+}
+#wrapper {
+    padding: 20px;
+    transition: margin-left 0.7s;
+}
+#wrapper .header {
+    background: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 2vh;
+}
+
+.nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #151719;
+    opacity: .9;
+    overflow-x: hidden;
+    padding-top: 100px;
+    transition: 0.7s;
+}
+.nav a{
+    display: block;
+    padding: 50px 30px;
+    font-size: 28px;
+    text-decoration: none;
+    color: #ccc;
+}
+.nav a:hover {
+    color: #fff;
+    transition: 0.4s;
+}
+.nav .close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin-left: 50px;
+    font-size: 50px;
+}
+
+.slide a {
+    color: #000;
+    font-size: 50px;
+}
+
+.content .set {
+    text-align: center;
+}
+.content .seat-btn {
+    width:7vh;
+    height: 7vh;
+    background: #484848;
+    color: #fff;
+    font-weight: bold;
+    margin: 2px;
+    font-size: 1vh;
+}
+.content .seat-btn:hover {background: #fa777d; color: #000; font-size: 2vh;}
+.content .seat-btn:active {background-color: #fa777d; color: #000; font-size: 2vh;}
+.content .seat-btn:focus {background: #fa777d; color: #000; font-size: 2vh;}
+
+.content .view {
+    text-align: center;
+}
+.content .view input {
+    margin: 5px;
+    width: 10vh;
+    height: 3vh;
+    font-size: 2vh;
+    text-align: center;
+}
+.text {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 2vh;
+    color: #3492d9;
+}
+
+
+/* 예약하기 */
+.form {margin: 10px;}
+.form .int-area {
+    text-align: center;
+    font-size: 1.5vh;
+}
+.form .int-area input {width: 13vh; height: 3vh;font-size: 2vh;}
+.form .int-area button {width: 5vh;height: 3vh;font-size: 1vh;}
+
+/* 예약확인 */
+.CheckText {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 2vh;
+    color: #3492d9;
+}
+
+.content h2 {
+    font-size: 2vh;
+    color: #3492d9;
+}
+
+.content .rd-btn {
+    text-align: center;
+    margin: 20px;
+}
+.content .rd-btn button {
+    width: 10vh;
+    height: 4vh;
+    margin: 1vh;
+    font-size: 2vh;
+}
+.content #draw-text {
+    width: 100%;
+    height: 5vh;
+    text-align: left;
+    font-size: 2vh;
+}
+
+/* 예약완료 */
+.content .complete {
+    text-align: center;
+}
+.content .complete img {
+    width: 100%;
+}
+
+/* 문의사항 */
+.content textarea {
+    width: 100%;
+    height: 10vh;
+    font-size: 2vh;
+    margin: 1vh;
+}
+.content #sub-btn {
+    width: 15vh;
+    height: 5vh;
+    font-size: 2vh;
+    font-weight: 200;
+    margin-top: 2vh;
+    margin-right: 1vh;
+}
+
+
+
+
+
+
+
