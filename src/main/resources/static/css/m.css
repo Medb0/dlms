@@ -59,6 +59,15 @@ body {
 .content .set {
     text-align: center;
 }
+.set .seat-btn1 {
+    width:7vh;
+    height: 7vh;
+    background: #484848;
+    color: #fff;
+    font-weight: bold;
+    margin: 2px;
+    font-size: 1vh;
+}
 .content .seat-btn {
     width:7vh;
     height: 7vh;
