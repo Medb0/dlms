@@ -14,21 +14,27 @@ public class IndexController {
 
     private final PostsService postsService;
 
+    // login 페이지
+
+    @GetMapping("login")
+    public String login(){return "login";}
+
+    // 관리자 페이지
     @GetMapping("/")
-    public String index(){
+    public String index(Model model){
+        model.addAttribute("posts", postsService.findAllDesc());
         return "index";
     }
-
     @GetMapping("/create")
     public String create(){
         return "create";
     }
 
     @GetMapping("/check")
-    public String check(){
+    public String check(Model model){
+        model.addAttribute("posts", postsService.findAllDesc());
         return "check";
     }
-
     @GetMapping("/cancel")
     public String cancel(){
         return "cancel";
@@ -44,6 +50,7 @@ public class IndexController {
         return "member";
     }
 
+    // 사용자 페이지
     @GetMapping("/user")
     public String user_main(Model model){
         model.addAttribute("posts", postsService.findAllDesc());
@@ -60,5 +67,31 @@ public class IndexController {
         model.addAttribute("posts", dto);
 
         return "user_form2";
+    }
+
+    // 모바일 페이지
+    @GetMapping("/m")
+    public String m_user_main(){
+        return "m_user_main";
+    }
+
+    @GetMapping("/m_reservation")
+    public String m_user_reservation(){
+        return "m_user_reservation";
+    }
+
+    @GetMapping("/m_check")
+    public String m_user_check(){
+        return "m_user_check";
+    }
+
+    @GetMapping("/m_questions")
+    public String m_usesr_questions(){
+        return "m_user_questions";
+    }
+
+    @GetMapping("/m_withdraw")
+    public String m_user_withdraw(){
+        return "m_user_withdraw";
     }
 }

@@ -13,19 +13,13 @@
                     <th scope="cols" colspan="2">예약현황</th>
                 </tr>
                 </thead>
+                {{#posts}}
                 <tbody>
                 <tr>
-                    <th scope="row">1</th>
-                    <td>내용이 들어갑니다.</td>
+                    <th scope="row">{{id}}</th>
+                    <td>좌석 : {{position}}, 핸드폰 번호 : {{phone_num}}</td>
                 </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>내용이 들어갑니다.</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>내용이 들어갑니다.</td>
-                </tr>
+                {{/posts}}
                 </tbody>
             </table>
         </div>
