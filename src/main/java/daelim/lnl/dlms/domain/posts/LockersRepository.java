@@ -5,5 +5,5 @@ import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 
-public interface LockersRepository extends JpaRepository<Posts, Long> {
+public interface LockersRepository extends JpaRepository<Lockers, Long> {
 }
