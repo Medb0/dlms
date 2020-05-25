@@ -1,9 +1,38 @@
 {{>layout/admin_header}}
+<<<<<<< HEAD
 <div class="main_content">
     <div class="header">Welcome! DLMS System.</div>
     <div class="info">
         <div>
             <h2>예약확인하기</h2>
+=======
+        <div class="main_content">
+            <div class="header">Welcome! DLMS System.</div>
+            <div class="info">
+                <div>
+                    <img id="checkseat" src="/images/seat.jpg" alt="seat">
+                </div>
+                <div>
+                    <table class="reservation">
+                        <thead>
+                            <tr>
+                                <th scope="cols" colspan="2">예약자 리스트
+                                <input type="button" class="btn" value="출력">
+                                </th>
+                            </tr>
+                        </thead>
+                        {{#posts}}
+                        <tbody>
+                            <tr>
+                                <th scope="row">{{id}}</th>
+                                <td>좌석:{{position}} , 핸드폰:{{phone_num}}</td>
+                            </tr>
+                        </tbody>
+                        {{/posts}}
+                    </table>
+                </div>
+            </div>
+>>>>>>> ceb706ebd93cbab1dc5455a984c6f6fbed453074
         </div>
         <div class="set">
             <input id="seat" class="seat-btn" type="button" value="121">
