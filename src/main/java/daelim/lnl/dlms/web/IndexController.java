@@ -1,5 +1,6 @@
 package daelim.lnl.dlms.web;
 
+import daelim.lnl.dlms.service.posts.LockersService;
 import daelim.lnl.dlms.service.posts.PostsService;
 import daelim.lnl.dlms.web.dto.PostsResponseDto;
 import lombok.RequiredArgsConstructor;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 public class IndexController {
 
     private final PostsService postsService;
+    private final LockersService lockersService;
 
     // login 페이지
 
@@ -23,7 +25,7 @@ public class IndexController {
     @GetMapping("/")
     public String index(Model model){
         model.addAttribute("posts", postsService.findAllDesc());
-        model.addAttribute("lockers",postsService.findAllDesc());
+        model.addAttribute("lockers",lockersService.findAllDesc());
         return "index";
     }
     @GetMapping("/create")

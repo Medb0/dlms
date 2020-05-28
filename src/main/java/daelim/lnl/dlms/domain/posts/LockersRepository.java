@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface LockersRepository extends JpaRepository<Lockers, Long> {
 
-    @Query("SELECT p FROM Posts p ORDER BY p.id asc ")
+    @Query("SELECT p FROM Lockers p ORDER BY p.idx asc ")
     List<Lockers> findAllDesc();
 }

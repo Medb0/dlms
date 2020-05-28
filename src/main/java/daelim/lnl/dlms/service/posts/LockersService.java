@@ -4,10 +4,7 @@ import daelim.lnl.dlms.domain.posts.Lockers;
 import daelim.lnl.dlms.domain.posts.LockersRepository;
 import daelim.lnl.dlms.domain.posts.Posts;
 import daelim.lnl.dlms.domain.posts.PostsRepository;
-import daelim.lnl.dlms.web.dto.PostsListResponseDto;
-import daelim.lnl.dlms.web.dto.PostsResponseDto;
-import daelim.lnl.dlms.web.dto.PostsSaveRequestDto;
-import daelim.lnl.dlms.web.dto.PostsUpdateRequestDto;
+import daelim.lnl.dlms.web.dto.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -41,10 +38,10 @@ public class LockersService {
 //        return new LockersResponseDto(entity);
 //    }
 //
-//    @Transactional(readOnly = true)
-//    public List<PostsListResponseDto> findAllDesc(){
-//        return lockersRepository.findAllDesc().stream()
-//                .map(PostsListResponseDto::new)
-//                .collect(Collectors.toList());
-//    }
+    @Transactional(readOnly = true)
+    public List<LockersListResponseDto> findAllDesc(){
+        return lockersRepository.findAllDesc().stream()
+                .map(LockersListResponseDto::new)
+                .collect(Collectors.toList());
+    }
 }
