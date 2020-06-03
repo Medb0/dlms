@@ -39,7 +39,8 @@ public class IndexController {
         return "check";
     }
     @GetMapping("/cancel")
-    public String cancel(){
+    public String cancel(Model model){
+        model.addAttribute("posts", postsService.findAllDesc());
         return "cancel";
     }
 
@@ -49,7 +50,8 @@ public class IndexController {
     }
 
     @GetMapping("/member")
-    public String member(){
+    public String member(Model model){
+        model.addAttribute("posts", postsService.findAllDesc());
         return "member";
     }
 

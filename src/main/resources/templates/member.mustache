@@ -13,18 +13,12 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>내용이 들어갑니다.<form align="right"><input type=submit value="회원탈퇴"></form></td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>내용이 들어갑니다.<form align="right"><input type=submit value="회원탈퇴"></form></td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>내용이 들어갑니다.<form align="right"><input type=submit value="회원탈퇴"></form></td>
-                </tr>
+                {{#posts}}
+                    <tr>
+                        <th scope="row">{{id}}</th>
+                        <td>{{phone_num}}<form align="right"><input type=submit value="회원탈퇴"></form></td>
+                    </tr>
+                {{/posts}}
                 </tbody>
             </table>
         </div>

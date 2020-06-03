@@ -48,10 +48,10 @@ public class PostsRepositoryTest {
     @Test
     public void BaseTimeEntity_regist(){
         //given
-        LocalDateTime now = LocalDateTime.of(2020,05,15,0,0,0);
+        LocalDateTime now = LocalDateTime.of(2020,6,1,0,0,0);
         postsRepository.save(Posts.builder()
                 .phone_num("01012345678")
-                .position("M134")
+                .position("122")
                 .build());
 
         //when

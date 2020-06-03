@@ -68,17 +68,17 @@ public class PostsApiControllerTest {
     public void Posts_update(){
         //given
         Posts savePosts = postsRepository.save(Posts.builder()
-                .phone_num("01012345678")
-                .position("M134")
+                .phone_num("01011111111")
+                .position("120")
                 .build());
 
         Long updateId = savePosts.getId();
-        String expectedPhone_num = "01022221234";
-        String expectedPostion = "M135";
+        String expectedPhone_num = "01022222222";
+        String expectedPosition = "121";
 
         PostsUpdateRequestDto requestDto = PostsUpdateRequestDto.builder()
                 .phone_num(expectedPhone_num)
-                .position(expectedPostion)
+                .position(expectedPosition)
                 .build();
 
         String  url = "http://localhost:" + port + "/api/v1/posts/" + updateId;
@@ -95,6 +95,6 @@ public class PostsApiControllerTest {
         List<Posts> all = postsRepository.findAll();
 
         assertThat(all.get(0).getPhone_num()).isEqualTo(expectedPhone_num);
-        assertThat(all.get(0).getPosition()).isEqualTo(expectedPostion);
+        assertThat(all.get(0).getPosition()).isEqualTo(expectedPosition);
     }
 }
