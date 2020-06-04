@@ -18,7 +18,7 @@ public class IndexController {
 
     // login 페이지
 
-    @GetMapping("login")
+    @GetMapping("/login")
     public String login(){return "login";}
 
     // 관리자 페이지

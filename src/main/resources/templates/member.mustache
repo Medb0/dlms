@@ -16,7 +16,7 @@
                 {{#posts}}
                     <tr>
                         <th scope="row">{{id}}</th>
-                        <td>{{phone_num}}<form align="right"><input type=submit value="회원탈퇴"></form></td>
+                        <td>{{phone_num}}<button type=button onclick=main.delete({{id}})>회원탈퇴</button></td>
                     </tr>
                 {{/posts}}
                 </tbody>
@@ -24,5 +24,5 @@
         </div>
     </div>
 </div>
-
+<script src="/scripts/member.js"></script>
 {{>layout/admin_footer}}
