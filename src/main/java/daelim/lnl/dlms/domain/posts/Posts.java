@@ -29,7 +29,7 @@ public class Posts extends BaseTimeEntity {
     @Column(length = 11 , nullable = false)
     private String phone_num;
 
-    @Column(length = 50 , nullable = false)
+    @Column(length = 50)
     private String position;
 
     @Builder
@@ -41,8 +41,7 @@ public class Posts extends BaseTimeEntity {
         this.position = position;
     }
 
-    public void update(String phone_num, String position){
-        this.phone_num = phone_num;
+    public void update(String position){
         this.position = position;
     }
 }

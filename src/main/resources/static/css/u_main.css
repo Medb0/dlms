@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Jua', sans-serif;
+    height: 100vh;
+    background: url("../images/background.png") no-repeat center;
+    background-size:cover;
+}
+.main {}
+
+.header {}
+.header img#maintit {float: left; width: 300px;margin: 30px;margin-top: 50px;}
+.header #menu_open {
+    text-decoration: none;
+    color: #fff;   
+    margin: 10px;
+}
+
+.sidebar{
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    transition: all .5s ease;
+    right: -70%;
+}
+
+.sidebar header{
+  display: inline;
+  text-align: center;
+  user-select: none;
+  padding: 30px;
+}
+.sidebar a{
+  display: block;
+  height: 200px;
+  width: 100%;
+  color: #b5b5b5;
+  font-size: 50px;
+  line-height: 200px;
+  text-align: center;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-left: 5px solid transparent;
+  transition: all .5s ease;
+}
+
+.menu {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+a.active,a:hover{
+  color: #006cd0;
+}
+.sidebar .banner {
+    width: 100%;
+    margin-top: 50px;
+}
+
+header #cancel {
+    display: inline;
+    margin-left:350px;
+    font-size: 70px;
+}
+
+header #title2 {
+    display: inline;
+    width: 150px;
+    margin-top: 70px;
+}
+
+#menu_open {
+    float: right;
+    padding: 40px;
+    font-size: 25px;
+    padding-top: 100px;
+}
+
+.contents img {
+    width: 80%;
+    padding: 50px;
+    margin-top: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+

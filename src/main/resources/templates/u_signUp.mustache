@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signUp</title>
+    
+    <link rel="stylesheet" href="./css/u_signUp.css">
+    
+    <script type=text/javascript src="./libs/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <section class="signup">
+        <div class="title">
+            <img src="./images/signupTitle.png" alt="title">
+        </div>
+        <form action="u_userLogin.mustache">
+            <div class="int-area">
+                <label for="id">이름</label>
+                <input type="text" name="id" id="id" autocomplete="off" required><br>
+            </div>
+            <div class="int-area">
+                <label for="pw">학번</label>
+                <input type="text" name="pw" id="pw" autocomplete="off" required><br>
+            </div>
+            <div class="int-area">
+                <label for="pw">비밀번호</label>
+                <input type="password" name="pw" id="pw" autocomplete="off" required><br>
+            </div>
+            <div class="int-area">
+                <label for="pw">연락처</label>
+                <input type="text" name="pw" id="pw" autocomplete="off" required><br>
+            </div>
+            <div class="btn-area">
+                <button id="btn1" type="submit">JOIN</button>
+                <button id="btn2" type="submit"><a href="u_userLogin.mustache">CANCEL</a></button>
+            </div>
+        </form>
+        
+    </section>
+</body>
+</html>

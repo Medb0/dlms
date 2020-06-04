@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>userLogin</title>
+    
+    <link rel="stylesheet" href="./css/u_Login.css">
+    
+    <script type=text/javascript src="./libs/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <section class="login">
+        <div class="title">
+            <img src="./images/loginTitle.png" alt="title">
+        </div>
+        <form action="u_main.mustache">
+            <div class="int-area">
+                <label for="id">학번</label>
+                <input type="text" name="id" id="id" autocomplete="off" required><br>
+            </div>
+            <div class="int-area">
+                <label for="pw">비밀번호</label>
+                <input type="password" name="pw" id="pw" autocomplete="off" required><br>
+            </div>
+            <div class="btn-area">
+                <button id="btn" type="submit">JOIN</button>
+            </div>
+            <div class="signup">
+                <a href="u_signUp.mustache">회원가입</a>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

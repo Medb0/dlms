@@ -15,7 +15,7 @@
             {{#posts}}
                 <tr>
                     <th scope="row">{{id}}</th>
-                    <td>{{position}}</td>
+                    <td>{{position}}<button type=button onclick=main.update({{id}})>상세 보기</button></td>
                 </tr>
             {{/posts}}
             </tbody>
@@ -29,4 +29,5 @@
         <input type="button" id="cb4" value="취소">
     </div>
 </div>
+<script src="/scripts/cancel.js"></script>
 {{>layout/admin_footer}}

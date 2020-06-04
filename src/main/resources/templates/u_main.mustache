@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>userMain</title>
+    
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/u_main.css">
+    
+    
+    
+    <script type=text/javascript src="./libs/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <section class="main">
+        <div class="header" id="side">
+            <img id="maintit" src="./images/mainTitle.png" alt="title"> 
+            <a href="#" id="menu_open" onclick="ShowMenu()"><i class="fa fa-bars fa-4x"></i></a>
+            <div class="sidebar">
+                <div class="menu">
+                    <header>
+                       <img id="title2" src="./images/mcloset.png" alt="title2">
+                        <a id="cancel" href="#"><i class="fa fa-times" onclick="HideMenu()"></i></a>
+                    </header>
+                    <hr>
+                    <ul>
+                        <li><a href="/u_reserve"><i class="fa fa-plus-square"></i><span>예약하기</span></a></li>
+                        <li><a href="/u_check"><i class="fa fa-check-square"></i><span>예약확인</span></a></li>
+                        <li><a href="/u_question"><i class="fa fa-envelope-square"></i><span>문의사항</span></a></li>
+                        <li><a href="/u_withdraw"><i class="fa fa-user"></i><span>회원탈퇴</span></a></li>
+                    </ul>
+                    <img class="banner" src="./images/banner.png" alt="banner">
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <img src="./images/Maintext.png" alt="text">
+        </div>
+    </section>
+    <script src="./scripts/silde.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    
+    <script>
+        var giMenuDuration = 700;
+        
+        //누르면 사이드바 나옴
+        function ShowMenu() {
+            $('.sidebar').css({'display':'block'});
+            $('.menu').css({'right':'-100%'})
+            $('.menu').animate({right:'100%'}, {duration:giMenuDuration});
+        }
+        //누르면 사라짐
+        function HideMenu() {
+            $('.menu').animate({right:'-100%'},{duration:giMenuDuration, complete:function(){$('.sidebar').css({'display':'none'});}});
+        }
+        
+    </script>
+</body>
+</html>

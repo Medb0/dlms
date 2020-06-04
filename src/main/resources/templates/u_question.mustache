@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>userMain</title>
+    
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/u_question.css">
+    
+    <script type=text/javascript src="./libs/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="/u"><img id="title" src="./images/mainTitle2.png" alt="title"></a>
+        <a href="/u" id="home"><i class="fa fa-home fa-5x"></i></a>
+    </div>
+    <hr>
+    <div class="content">
+       <div class="text">
+           <img src="./images/questText.png" alt="">
+       </div>
+        <div class="int-area">
+           <form name="myform" action="">
+                <textarea name="quest" id="quest" cols="100"  rows="10"></textarea>
+                <label for="name">이름</label>
+                <input id="name" type="text" value="">
+                <br>  
+                <label for="num">번호</label>
+                <input id="num" type="text" value="">
+                <br>
+                <button id="sub-btn" onclick="check()" type="submit">전송</button>
+                
+                <img src="./images/questimg.png" alt="img">
+            </form>
+        </div>
+    </div>
+    
+    <script src="scripts/imgbtn.js"></script>
+    <script src="scripts/inputCheck.js"></script>
+</body>
+</html>

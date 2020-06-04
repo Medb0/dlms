@@ -1,5 +1,6 @@
 package daelim.lnl.dlms.web;
 
+import daelim.lnl.dlms.service.posts.LockersService;
 import daelim.lnl.dlms.service.posts.PostsService;
 import daelim.lnl.dlms.web.dto.PostsResponseDto;
 import daelim.lnl.dlms.web.dto.PostsSaveRequestDto;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 public class PostsApiController {
 
     private final PostsService postsService;
+    private final LockersService lockersService;
 
     @PostMapping("/api/v1/posts")
     public Long save(@RequestBody PostsSaveRequestDto requestDto){

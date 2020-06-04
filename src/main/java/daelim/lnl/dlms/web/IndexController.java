@@ -71,32 +71,32 @@ public class IndexController {
         PostsResponseDto dto = postsService.findById(id);
         model.addAttribute("posts", dto);
 
-        return "user_form2";
+        return "cancel";
     }
 
     // 모바일 페이지
-    @GetMapping("/m")
-    public String m_user_main(){
-        return "m_user_main";
+    @GetMapping("/u")
+    public String u_main(){
+        return "u_main";
     }
 
-    @GetMapping("/m_reservation")
-    public String m_user_reservation(){
-        return "m_user_reservation";
+    @GetMapping("/u_reserve")
+    public String u_reserve(){
+        return "u_reserve";
     }
 
-    @GetMapping("/m_check")
-    public String m_user_check(){
-        return "m_user_check";
+    @GetMapping("/u_check")
+    public String u_check(){
+        return "u_check";
     }
 
-    @GetMapping("/m_questions")
-    public String m_usesr_questions(){
-        return "m_user_questions";
+    @GetMapping("/u_question")
+    public String u_question(){
+        return "u_question";
     }
 
-    @GetMapping("/m_withdraw")
-    public String m_user_withdraw(){
-        return "m_user_withdraw";
+    @GetMapping("/u_withdraw")
+    public String u_withdraw(){
+        return "u_withdraw";
     }
 }
