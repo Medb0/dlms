@@ -26,7 +26,7 @@ public class LockersService {
 //    public Long update(Long id, PostsUpdateRequestDto requestDto) {
 //        Lockers lockers = lockersRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("해당 게시글이 없습니다. id="+id));
 //
-//        lockers.update(requestDto.getPhone_num(), requestDto.getPosition());
+//        lockers.update(requestDto.getPosition());
 //
 //        return id;
 //    }
@@ -44,4 +44,5 @@ public class LockersService {
                 .map(LockersListResponseDto::new)
                 .collect(Collectors.toList());
     }
+
 }

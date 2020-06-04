@@ -6,9 +6,9 @@
             <h2>예약확인하기</h2>
         </div>
         <div class="set">
-            <input id="seat" class="seat-btn" type="button" value="121">
-            <input id="seat" class="seat-btn" type="button" value="122">
-
+            {{#posts}}
+                <input id="seat" class="seat-btn" type="button" value="{{position}}">
+            {{/posts}}
         </div>
     </div>
     <div>
@@ -23,12 +23,12 @@
             </thead>
             <tbody>
             {{#posts}}
-            <tr>
-                <th scope="row">{{id}}</th>
-                <td>예약 위치 : {{position}}  |  핸드폰 번호 : {{phone_num}}</td>
-                <td>학번 : {{stduent_id}}</td>
-                <td>이름 : {{name}}</td>
-            </tr>
+                <tr>
+                    <th scope="row">{{id}}</th>
+                    <td>예약 위치 : {{position}}  | 핸드폰 번호 : {{phone_num}}</td>
+                    <td>학번 : {{stduent_id}}</td>
+                    <td>이름 : {{name}}</td>
+                </tr>
             {{/posts}}
             </tbody>
         </table>

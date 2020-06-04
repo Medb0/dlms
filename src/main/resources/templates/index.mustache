@@ -8,29 +8,29 @@
         </div>
         <div class="set">
             {{#lockers}}
-            <input id="seat" class="seat-btn1" type="button" value={{position}}>
+                <input id="seat" class="seat-btn1" type="button" value={{position}}>
             {{/lockers}}
-        <div>
-            <table class="reservation">
-                <thead>
-                <tr>
-                    <th scope="cols" colspan="4">예약현황</th>
-                </tr>
-                </thead>
-                {{#posts}}
-                <tbody>
-                <tr>
-                    <th scope="row">{{id}}</th>
-                    <td>좌석 : {{position}}</td>
-                    <td>학번 : {{stduent_id}}</td>
-                    <td>이름 : {{name}}</td>
-                    <td>핸드폰 번호 : {{phone_num}}</td>
-                </tr>
-                {{/posts}}
-                </tbody>
-            </table>
+            <div>
+                <table class="reservation">
+                    <thead>
+                    <tr>
+                        <th scope="cols" colspan="4">예약현황</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {{#posts}}
+                        <tr>
+                            <th scope="row">{{id}}</th>
+                            <td>좌석 : {{position}}</td>
+                            <td>학번 : {{stduent_id}}</td>
+                            <td>이름 : {{name}}</td>
+                            <td>핸드폰 번호 : {{phone_num}}</td>
+                        </tr>
+                    {{/posts}}
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
-</div>
 
 {{>layout/admin_footer}}
