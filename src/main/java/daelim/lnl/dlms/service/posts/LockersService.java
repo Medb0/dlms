@@ -3,7 +3,6 @@ package daelim.lnl.dlms.service.posts;
 import daelim.lnl.dlms.domain.posts.Lockers;
 import daelim.lnl.dlms.domain.posts.LockersRepository;
 import daelim.lnl.dlms.domain.posts.Posts;
-import daelim.lnl.dlms.domain.posts.PostsRepository;
 import daelim.lnl.dlms.web.dto.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -22,14 +21,13 @@ public class LockersService {
 //        return lockersRepository.save(requestDto.toEntity()).getId();
 //    }
 //
-//    @Transactional
-//    public Long update(Long id, PostsUpdateRequestDto requestDto) {
-//        Lockers lockers = lockersRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("해당 게시글이 없습니다. id="+id));
-//
-//        lockers.update(requestDto.getPosition());
-//
-//        return id;
-//    }
+    @Transactional
+    public String update(String position) {
+
+        Lockers entity = lockersRepository.findByPosition(position);
+
+        return entity.getPosition();
+    }
 //
 //    public LockersResponseDto findById(Long id) {
 //
@@ -37,7 +35,7 @@ public class LockersService {
 //
 //        return new LockersResponseDto(entity);
 //    }
-//
+
     @Transactional(readOnly = true)
     public List<LockersListResponseDto> findAllDesc(){
         return lockersRepository.findAllDesc().stream()
@@ -45,4 +43,22 @@ public class LockersService {
                 .collect(Collectors.toList());
     }
 
+    @Transactional
+    public String updateStatus(String targetPosition) {
+
+        Lockers entity = lockersRepository.findByPosition(targetPosition);
+
+        entity.setStatus("y");
+
+        entity.save(entity);
+
+        return entity.getStatus();
+    }
+
+    public LockersResponseDto findByIdx(Long idx) {
+
+        Lockers entity = lockersRepository.findById(idx).orElseThrow(() -> new IllegalArgumentException("해당 사물함 번호가 없습니다. idx="+idx));
+
+        return new LockersResponseDto(entity);
+    }
 }

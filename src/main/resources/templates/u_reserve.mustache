@@ -8,142 +8,141 @@
     <link rel="stylesheet" href="./css/u_reserve.css">
     
     <script type=text/javascript src="./libs/jquery-3.4.1.min.js"></script>
+    <script src="/scripts/silde.js"></script>
 </head>
 <body>
+   
     <div class="header">
-        <a href="/u"><img id="title" src="./images/mainTitle2.png" alt="title"></a>
+        <a href="/u"><img id="title" src="/images/mainTitle2.png" alt="title"></a>
         <a href="/u" id="home"><i class="fa fa-home fa-5x"></i></a>
     </div>
     <hr>
     <div class="content">
-        <div class="slider-content simple-list" id="slider">
-            <div class="slider">
-                <img class="seat" id="seat" onclick="change()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat2" onclick="change2()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat3" onclick="change3()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat4" onclick="change4()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat5" onclick="change5()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat6" onclick="change6()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat7" onclick="change7()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat8" onclick="change8()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat9" onclick="change9()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat10" onclick="change10()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat11" onclick="change11()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat12" onclick="change12()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat13" onclick="change13()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat14" onclick="change14()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat15" onclick="change15()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat16" onclick="change16()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat17" onclick="change17()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat18" onclick="change18()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat19" onclick="change19()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat20" onclick="change20()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat21" onclick="change21()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat22" onclick="change22()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat23" onclick="change23()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat24" onclick="change24()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat25" onclick="change25()" src="./images/locker-room.png" alt="seat">
-            </div>
-            <div class="slider">
-                <img class="seat" id="seat26" onclick="change26()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat27" onclick="change27()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat28" onclick="change28()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat29" onclick="change29()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat30" onclick="change30()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat31" onclick="change31()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat32" onclick="change32()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat33" onclick="change33()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat34" onclick="change34()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat35" onclick="change35()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat36" onclick="change36()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat37" onclick="change37()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat38" onclick="change38()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat39" onclick="change39()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat40" onclick="change40()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat41" onclick="change41()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat42" onclick="change42()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat43" onclick="change43()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat44" onclick="change44()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat45" onclick="change45()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat46" onclick="change46()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat47" onclick="change47()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat48" onclick="change48()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat49" onclick="change49()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat50" onclick="change50()" src="./images/locker-room.png" alt="seat">
-            </div>
-            <div class="slider">
-                <img class="seat" id="seat51" onclick="change51()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat52" onclick="change52()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat53" onclick="change53()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat54" onclick="change54()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat55" onclick="change55()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat56" onclick="change56()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat57" onclick="change57()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat58" onclick="change58()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat59" onclick="change59()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat60" onclick="change60()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat61" onclick="change61()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat62" onclick="change62()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat63" onclick="change63()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat64" onclick="change64()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat65" onclick="change65()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat66" onclick="change66()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat67" onclick="change67()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat68" onclick="change68()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat69" onclick="change69()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat70" onclick="change70()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat71" onclick="change71()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat72" onclick="change72()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat73" onclick="change73()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat74" onclick="change74()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat75" onclick="change75()" src="./images/locker-room.png" alt="seat">
-            </div>
-            <div class="slider">
-                <img class="seat" id="seat76" onclick="change76()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat77" onclick="change77()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat78" onclick="change78()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat79" onclick="change79()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat80" onclick="change80()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat81" onclick="change81()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat82" onclick="change82()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat83" onclick="change83()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat84" onclick="change84()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat85" onclick="change85()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat86" onclick="change86()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat87" onclick="change87()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat88" onclick="change88()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat89" onclick="change89()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat90" onclick="change90()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat91" onclick="change91()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat92" onclick="change92()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat93" onclick="change93()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat94" onclick="change94()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat95" onclick="change95()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat96" onclick="change96()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat97" onclick="change97()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat97" onclick="change97()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat98" onclick="change98()" src="./images/locker-room.png" alt="seat">
-                <img class="seat" id="seat99" onclick="change99()" src="./images/locker-room.png" alt="seat">
-            </div>
-        </div>
+        <ul class="slider-content simple-list" id="slider">
+            <li class="slide">
+                <h1>상단</h1>
+                <img class="seat" id="1" onclick="window.open('/u_popup/1','pop','width=400px height=800px,location=no,status=no,scrollbars=no');" src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="2" onclick="window.open('/u_popup/2','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="3" onclick="window.open('/u_popup/3','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="4" onclick="window.open('/u_popup/4','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="5" onclick="window.open('/u_popup/5','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="6" onclick="window.open('/u_popup/6','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="7" onclick="window.open('/u_popup/7','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="8" onclick="window.open('/u_popup/8','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="9" onclick="window.open('/u_popup/9','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="10" onclick="window.open('/u_popup/10','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="11" onclick="window.open('/u_popup/11','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="12" onclick="window.open('/u_popup/12','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="13" onclick="window.open('/u_popup/13','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="14" onclick="window.open('/u_popup/14','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="15" onclick="window.open('/u_popup/15','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="16" onclick="window.open('/u_popup/16','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="17" onclick="window.open('/u_popup/17','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="18" onclick="window.open('/u_popup/18','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="19" onclick="window.open('/u_popup/19','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="20" onclick="window.open('/u_popup/20','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                
+            </li>
+            <li class="slide">
+               <h1>중상단</h1>
+                <img class="seat" id="21" onclick="window.open('/u_popup/21','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="22" onclick="window.open('/u_popup/22','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="23" onclick="window.open('/u_popup/23','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="24" onclick="window.open('/u_popup/24','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="25" onclick="window.open('/u_popup/25','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="26" onclick="window.open('/u_popup/26','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="27" onclick="window.open('/u_popup/27','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="28" onclick="window.open('/u_popup/28','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="29" onclick="window.open('/u_popup/29','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="30" onclick="window.open('/u_popup/30','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="31" onclick="window.open('/u_popup/31','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="32" onclick="window.open('/u_popup/32','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="33" onclick="window.open('/u_popup/33','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="34" onclick="window.open('/u_popup/34','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="35" onclick="window.open('/u_popup/35','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="36" onclick="window.open('/u_popup/36','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="37" onclick="window.open('/u_popup/37','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="38" onclick="window.open('/u_popup/38','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="39" onclick="window.open('/u_popup/39','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="40" onclick="window.open('/u_popup/40','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+            </li>
+            <li class="slide">
+               <h1>중단</h1>
+                <img class="seat" id="41" onclick="window.open('/u_popup/41','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="42" onclick="window.open('/u_popup/42','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="43" onclick="window.open('/u_popup/43','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="44" onclick="window.open('/u_popup/44','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="45" onclick="window.open('/u_popup/45','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="46" onclick="window.open('/u_popup/46','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="47" onclick="window.open('/u_popup/47','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="48" onclick="window.open('/u_popup/48','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="49" onclick="window.open('/u_popup/49','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="50" onclick="window.open('/u_popup/50','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="51" onclick="window.open('/u_popup/51','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="52" onclick="window.open('/u_popup/52','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="53" onclick="window.open('/u_popup/53','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="54" onclick="window.open('/u_popup/54','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="55" onclick="window.open('/u_popup/55','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="56" onclick="window.open('/u_popup/56','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="57" onclick="window.open('/u_popup/57','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="58" onclick="window.open('/u_popup/58','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="59" onclick="window.open('/u_popup/59','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="60" onclick="window.open('/u_popup/60','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                
+            </li>
+            <li class="slide">
+               <h1>중하단</h1>
+                <img class="seat" id="61" onclick="window.open('/u_popup/61','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="62" onclick="window.open('/u_popup/62','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="63" onclick="window.open('/u_popup/63','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="64" onclick="window.open('/u_popup/64','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="65" onclick="window.open('/u_popup/65','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="66" onclick="window.open('/u_popup/66','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="67" onclick="window.open('/u_popup/67','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="68" onclick="window.open('/u_popup/68','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="69" onclick="window.open('/u_popup/69','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="70" onclick="window.open('/u_popup/70','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="71" onclick="window.open('/u_popup/71','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="72" onclick="window.open('/u_popup/72','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="73" onclick="window.open('/u_popup/73','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="74" onclick="window.open('/u_popup/74','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="75" onclick="window.open('/u_popup/75','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="76" onclick="window.open('/u_popup/76','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="77" onclick="window.open('/u_popup/77','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="78" onclick="window.open('/u_popup/78','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="79" onclick="window.open('/u_popup/79','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="80" onclick="window.open('/u_popup/80','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+            </li>
+            <li class="slide">
+               <h1>하단</h1>
+                <img class="seat" id="81" onclick="window.open('/u_popup/81','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="82" onclick="window.open('/u_popup/82','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="83" onclick="window.open('/u_popup/83','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="84" onclick="window.open('/u_popup/84','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="85" onclick="window.open('/u_popup/85','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="86" onclick="window.open('/u_popup/86','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="87" onclick="window.open('/u_popup/87','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="88" onclick="window.open('/u_popup/88','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="89" onclick="window.open('/u_popup/89','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="90" onclick="window.open('/u_popup/90','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="91" onclick="window.open('/u_popup/91','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="92" onclick="window.open('/u_popup/92','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="93" onclick="window.open('/u_popup/93','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="94" onclick="window.open('/u_popup/94','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="95" onclick="window.open('/u_popup/95','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="96" onclick="window.open('/u_popup/96','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="97" onclick="window.open('/u_popup/97','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="98" onclick="window.open('/u_popup/98','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="99" onclick="window.open('/u_popup/99','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+                <img class="seat" id="100" onclick="window.open('/u_popup/100','pop','width=400px height=800px,location=no,status=no,scrollbars=no');"  src="/images/locker-room.png" alt="seat">
+            </li>
+        </ul>
     </div>
     <div class="nextprev">
-        <a href="#" id="prev"><img src="./images/prev.png" alt=""></a>
-        <a href="#" id="next"><img src="./images/next.png" alt=""></a>
+        <a href="#" id="prev"><img src="/images/prev.png" alt=""></a>
+        <a href="#" id="next"><img src="/images/next.png" alt=""></a>
     </div>
-    <div class="int-area">
-        <input type="text" id="locate" readonly placeholder="위치"/>
-        <input type="text" id="price" readonly placeholder="가격"/>
-    </div>
-    <div class="int-area2">
-        <form name="myform" action="">
-            <label for="name">이름</label>
-            <input type="text" id="name" value=""/>
-            <label for="num">번호</label>
-            <input type="text" id="num" value=""/>
-            <button type="submit" onclick="check()">예약</button>
-        </form>
-    </div>
+    
     <script src="scripts/imgbtn.js"></script>
     <script src="scripts/inputCheck.js"></script>
 </body>

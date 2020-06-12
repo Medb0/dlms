@@ -9,14 +9,19 @@
             <table class="reservation">
                 <thead>
                 <tr>
-                    <th scope="cols" colspan="2">회원목록</th>
+                    <th scope="cols" colspan="6">회원목록</th>
                 </tr>
                 </thead>
                 <tbody>
                 {{#posts}}
                     <tr>
                         <th scope="row">{{id}}</th>
-                        <td>{{phone_num}}<button type=button onclick=main.delete({{id}})>회원탈퇴</button></td>
+                        <td>학번 : {{stduent_id}}</td>
+                        <td> 이름 : {{name}} </td>
+                        <td> 전화번호 : {{phone_num}} </td>
+                        <td>
+                            <button type=button onclick=main.delete({{id}})>회원탈퇴</button>
+                        </td>
                     </tr>
                 {{/posts}}
                 </tbody>

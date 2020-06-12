@@ -101,7 +101,7 @@ body {
     width: 250px;
     height: 50px;
     margin:10px;
-    display:
+    /*display:*/
 }
 
 /* reservation list table */
@@ -120,22 +120,49 @@ table.reservation thead th {
 }
 table.reservation thead th .btn1 {
     float: right;
-    width: 50px;
-    height: 30px;
+    /*height: 30px;*/
+    width:100px;
+    background-color: #036;
+    border: none;
+    color:#fff;
+    padding: 5px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px;
+    cursor: pointer;
+
 }
+table.reservation tbody tr td button{
+    /*height: 30px;*/
+    width:100px;
+    background-color: #036;
+    border: none;
+    color:#fff;
+    padding: 5px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px;
+    cursor: pointer;
+}
+
 table.reservation tbody th {
-    width: 15px;
+    width: 5px;
     padding: 10px;
     font-weight: bold;
     vertical-align: top;
     border-bottom: 1px solid #ccc;
     background: #d3d3d3;
 }
-table.reservation td {
-    width: 100%;
+table.reservation tr td {
+    width: 300px;
     padding: 10px;
     vertical-align: top;
     border-bottom: 1px solid #ccc;
+    border-right: 1px dashed #ccc;
 }
 table.reservation td form {
     display: inline-block;
@@ -145,6 +172,7 @@ table.reservation td form input {
     width: 70px;
     height: 30px;
 }
+
 
 table.type09 {
     border-collapse: collapse;
@@ -200,6 +228,22 @@ table.type09 tbody th {
     border-bottom: 1px solid #ccc;
     background: #f3f6f7;
     text-align: center;
+}
+table.type09 tbody tr td button {
+    float: right;
+    width: 50px;
+    /*height: 30px;*/
+    width:100px;
+    background-color: #036;
+    border: none;
+    color:#fff;
+    padding: 5px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px;
+    cursor: pointer;
 }
 table.type09 td {
     width: 500px;

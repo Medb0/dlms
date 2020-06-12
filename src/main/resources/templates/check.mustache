@@ -16,7 +16,7 @@
 
             <thead>
             <tr>
-                <th scope="cols" colspan="2">예약자 리스트
+                <th scope="cols" colspan="5">예약자 리스트
                     <input type="button" value="출력" class="btn1">
                 </th>
             </tr>
@@ -25,9 +25,10 @@
             {{#posts}}
                 <tr>
                     <th scope="row">{{id}}</th>
-                    <td>예약 위치 : {{position}}  | 핸드폰 번호 : {{phone_num}}</td>
+                    <td>좌석 : {{position}}</td>
                     <td>학번 : {{stduent_id}}</td>
-                    <td>이름 : {{name}}</td>
+                    <td>이름 : {{name}} </td>
+                    <td>핸드폰 번호 : {{phone_num}}</td>
                 </tr>
             {{/posts}}
             </tbody>

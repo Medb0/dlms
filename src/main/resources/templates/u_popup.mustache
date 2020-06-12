@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>popup</title>
+
+    <link rel="stylesheet" href="/css/popup.css">
+</head>
+<body>
+<div class="header">
+    <img id="title" src="/images/mainTitle2.png" alt="title">
+</div>
+<hr>
+<div class="content">
+    <div>
+        <img id="image" src="/images/mcloset.png" alt="image">
+    </div>
+<div class="area">
+    {{#lockers}}
+        <input type="text" id="locate" value="{{position}}" readonly placeholder="위치"/>
+        <input type="text" id="locate" value="{{price}}" readonly placeholder="가격"/>
+    </div>
+        <div class="form">
+            <form>
+                <div class="int-area">
+                    <input type="hidden" id="position" value="{{position}}"/>
+                </div>
+                <div class="int-area">
+                    <input type="text" id="stduent_id" autocomplete="off" required placeholder="학번"/>
+                </div>
+                <div class="int-area">
+                    <input type="text" id="name" autocomplete="off" required placeholder="이름"/>
+                </div>
+                <div class="int-area">
+                    <input type="text" id="phone_num" autocomplete="off" required placeholder="전화번호"/>
+                </div>
+                <div class="int-area">
+                    <input type="text" id="pwd" autocomplete="off" required placeholder="비밀번호"/>
+                </div>
+                <div class="btn-area">
+                    <button type="button" id="btn_save" onclick=main.save()>예약하기</button>
+                </div>
+            </form>
+        </div>
+    {{/lockers}}
+</div>
+<script src="/scripts/popup.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.header #title {
+    display: inline;
+    width: 100px;
+    margin: 10px;
+}
+.content {
+    text-align: center;
+    padding: 10px;
+}
+.content #image {
+    width: 250px;
+}
+.area input {
+    width: 30%;
+    height: 40px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border: solid #d2d2d2;
+    border-radius: 30px;
+}
+
+.form {
+    padding-top: 20px;
+}
+.form .int-area {
+    padding: 10px;
+}
+.form .int-area input {
+    width: 60%;
+    height: 50px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid #999;
+}
+.form .btn-area {
+    padding-top: 10px;
+}
+.form .btn-area button {
+    width: 60%;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    background: #006cd0;
+    color: #fff;
+}
+.form .btn-area button:active {
+    background: #015aad;
+}
+
+
+
+
+

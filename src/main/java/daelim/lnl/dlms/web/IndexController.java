@@ -55,17 +55,7 @@ public class IndexController {
         return "member";
     }
 
-    // 사용자 페이지
-    @GetMapping("/user")
-    public String user_main(Model model){
-        model.addAttribute("posts", postsService.findAllDesc());
-        return "user_main";
-    }
-    @GetMapping("/user_form")
-    public String user_form(){
-        return "user_form";
-    }
-
+    // API 페이지
     @GetMapping("/posts/update/{id}")
     public String postsUpdate(@PathVariable Long id, Model model){
         PostsResponseDto dto = postsService.findById(id);
@@ -81,7 +71,7 @@ public class IndexController {
     }
 
     @GetMapping("/u_reserve")
-    public String u_reserve(){
+    public String u_reserve(Model model){
         return "u_reserve";
     }
 
@@ -98,5 +88,18 @@ public class IndexController {
     @GetMapping("/u_withdraw")
     public String u_withdraw(){
         return "u_withdraw";
+    }
+
+    @GetMapping("/u_popup/{idx}")
+    public String u_popup(@PathVariable Long idx,Model model){
+
+        model.addAttribute("lockers",lockersService.findByIdx(idx));
+
+        return "u_popup";
+    }
+
+    @GetMapping("/u_complete")
+    public String u_complete(){
+        return "u_complete";
     }
 }

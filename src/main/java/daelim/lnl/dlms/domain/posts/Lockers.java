@@ -1,13 +1,14 @@
 package daelim.lnl.dlms.domain.posts;
 
-import daelim.lnl.dlms.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 
 @Getter
+@Setter
 @NoArgsConstructor
 @Entity
 public class Lockers{
@@ -32,9 +33,12 @@ public class Lockers{
         this.price = price;
     }
 
-    public void update(String position, String status, String price){
+    public void update(String position){
         this.position = position;
-        this.status = status;
-        this.price = price;
+
+    }
+
+    public void save(Lockers positionData) {
+        this.status = positionData.getStatus();
     }
 }

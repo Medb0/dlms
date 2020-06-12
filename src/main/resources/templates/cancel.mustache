@@ -8,26 +8,32 @@
         <table class="type09">
             <thead>
             <tr>
-                <th scope="cols" colspan="2">예약자리스트</th>
+                <th scope="cols" colspan="6">예약자리스트</th>
             </tr>
             </thead>
             <tbody>
             {{#posts}}
                 <tr>
                     <th scope="row">{{id}}</th>
-                    <td>{{position}}<button type=button onclick=main.update({{id}})>상세 보기</button></td>
+                    <td>예약 위치 : {{position}} </td>
+                    <td> 학번 : {{stduent_id}} </td>
+                    <td> 이름 : {{name}} </td>
+                    <td> 핸드폰 번호 : {{phone_num}} </td>
+                    <td>
+                        <button type=button onclick=main.update({{id}})>예약 취소</button>
+                    </td>
                 </tr>
             {{/posts}}
             </tbody>
         </table>
     </div>
-    <div class="canclebar">
-        <input type="box" id="cb1" value="예약번호" placeholder="예약번호">
-        <input type="text" id="cb2" value="학번" placeholder="학번">
-        <input type="text" id="cb2" value="이름" placeholder="이름">
-        <input type="text" id="cb3" value="예약위치" placeholder="예약위치">
-        <input type="button" id="cb4" value="취소">
-    </div>
+    <!--    <div class="canclebar">-->
+    <!--        <input type="box" id="cb1" value="예약번호" placeholder="예약번호">-->
+    <!--        <input type="text" id="cb2" value="학번" placeholder="학번">-->
+    <!--        <input type="text" id="cb2" value="이름" placeholder="이름">-->
+    <!--        <input type="text" id="cb3" value="예약위치" placeholder="예약위치">-->
+    <!--        <input type="button" id="cb4" value="취소">-->
+    <!--    </div>-->
 </div>
 <script src="/scripts/cancel.js"></script>
 {{>layout/admin_footer}}
