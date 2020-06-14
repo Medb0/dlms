@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
 @RequiredArgsConstructor
 @RestController
 public class LockersApiController {
@@ -25,12 +28,14 @@ public class LockersApiController {
 //    }
 
     @GetMapping("/api/v1/lksearch/{idx}")
-    public LockersResponseDto findByIdx(@PathVariable Long idx){
+    public LockersResponseDto findByIdx(@PathVariable Long idx) {
         return lockersService.findByIdx(idx);
     }
 
     @GetMapping("/api/v1/lockers/{position}")
-    public String update(@PathVariable String position){
-        return lockersService.updateStatus(position);
+    public void update(@PathVariable String position, HttpServletResponse response) throws IOException {
+            lockersService.updateStatus(position);
+
+            response.sendRedirect("/u_complete");
     }
 }

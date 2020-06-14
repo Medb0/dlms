@@ -16,8 +16,6 @@ document.addEventListener('DOMContentLoaded', function(){
         //         $slideHeight = $slide[i].offsetHeight;
         //     }
         // }
-
-        console.log($slideHeight);
     
         $sildeWrap.style.height = $slideHeight + 'px';
         $slideContent.style.height = $slideHeight + 'px';

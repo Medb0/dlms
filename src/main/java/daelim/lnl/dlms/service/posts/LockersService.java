@@ -2,8 +2,8 @@ package daelim.lnl.dlms.service.posts;
 
 import daelim.lnl.dlms.domain.posts.Lockers;
 import daelim.lnl.dlms.domain.posts.LockersRepository;
-import daelim.lnl.dlms.domain.posts.Posts;
-import daelim.lnl.dlms.web.dto.*;
+import daelim.lnl.dlms.web.dto.LockersListResponseDto;
+import daelim.lnl.dlms.web.dto.LockersResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -61,4 +61,5 @@ public class LockersService {
 
         return new LockersResponseDto(entity);
     }
+
 }

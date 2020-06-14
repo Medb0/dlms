@@ -1,5 +1,6 @@
 package daelim.lnl.dlms.web;
 
+import daelim.lnl.dlms.domain.posts.LockersRepository;
 import daelim.lnl.dlms.service.posts.LockersService;
 import daelim.lnl.dlms.service.posts.PostsService;
 import daelim.lnl.dlms.web.dto.PostsResponseDto;
@@ -15,6 +16,7 @@ public class IndexController {
 
     private final PostsService postsService;
     private final LockersService lockersService;
+    private final LockersRepository lockersRepository;
 
     // login 페이지
 
@@ -72,6 +74,11 @@ public class IndexController {
 
     @GetMapping("/u_reserve")
     public String u_reserve(Model model){
+        model.addAttribute("lockers1",lockersRepository.findByIdxBetween(1));
+        model.addAttribute("lockers21",lockersRepository.findByIdxBetween(21));
+        model.addAttribute("lockers41",lockersRepository.findByIdxBetween(41));
+        model.addAttribute("lockers61",lockersRepository.findByIdxBetween(61));
+        model.addAttribute("lockers81",lockersRepository.findByIdxBetween(81));
         return "u_reserve";
     }
 
