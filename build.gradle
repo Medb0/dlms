@@ -42,4 +42,6 @@ dependencies {
 
 	// mustache 의존성 추가
 	compile 'org.springframework.boot:spring-boot-starter-mustache'
+
+//	compile 'org.springframework.session:spring-session-jdbc'
 }
