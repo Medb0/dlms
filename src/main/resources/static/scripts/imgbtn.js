@@ -3,10 +3,10 @@ function statusCheck(idx, status) {
     var tagId = document.getElementById(idx);
 
     if(status == 'y'){
-        console.log(idx , status, "트루");
         tagId.src = "./images/locker-room.png"
+        tagId.setAttribute('onclick', "");
     }else{
-        console.log(idx , status, "펄스");
         tagId.src = "./images/mcloset.png"
+        tagId.setAttribute('onclick', "window.open('/u_popup/"+ idx +"','pop','width=400px height=800px,location=no,status=no,scrollbars=no');");
     }
 }

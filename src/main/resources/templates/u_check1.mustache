@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>userMain</title>
+    
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/u_check.css">
+    
+    <script type=text/javascript src="./libs/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="/u_main"><img id="title" src="./images/mainTitle2.png" alt="title"></a>
+        <a href="/u_main" id="home"><i class="fa fa-home fa-5x"></i></a>
+    </div>
+    <hr>
+    <div class="content">
+        <div class="int-area">
+          <div class="reser">
+              <img id="reser" src="/images/searchText.png" alt="text">
+          </div>
+           <img src="/images/searchimg.png" alt="image">
+            <form action="/u_check2">
+                <div class="int-area">
+                    <input type="text" id="locate" autocomplete="off" required placeholder="번호"/>
+                </div>
+                <div class="btn-area">
+                    <button id="btn1" type="submit">조회하기</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+    <script src="scripts/imgbtn.js"></script>
+    <script src="scripts/inputCheck.js"></script>
+</body>
+</html>

@@ -82,9 +82,14 @@ public class IndexController {
         return "u_reserve";
     }
 
-    @GetMapping("/u_check")
+    @GetMapping("/u_check1")
+    public String u_chec1(){
+        return "u_check1";
+    }
+
+    @GetMapping("/u_check2")
     public String u_check(){
-        return "u_check";
+        return "u_check2";
     }
 
     @GetMapping("/u_question")
